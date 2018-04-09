@@ -1,3 +1,4 @@
+importScripts('cache-polyfill/serviceworker-cache-polyfill.js');
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/blog/sw.js', {
     scope: '/blog/'
