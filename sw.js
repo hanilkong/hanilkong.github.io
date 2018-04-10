@@ -5,7 +5,7 @@ self.addEventListener('install', function(event) {
     caches.open(cacheName).then(function(cache) {
       return cache.addAll(
         [
-          '/images/**
+          '/images/**'
         ]
       );
     })
